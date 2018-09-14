@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Comment_Section">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/comment_toolbar">
+
+    </android.support.v7.widget.Toolbar>
+
+/>
+
+    <EditText
+        android:id="@+id/comment_et"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginStart="10dp"
+        android:hint="Your Comment here ..."
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/comment_post"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/comment_et"
+        android:layout_marginEnd="12dp"
+        android:padding="8dp"
+        android:src="@mipmap/send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/comment_toolbar"
+        android:layout_height="wrap_content"
+       />
+
+
+
+
+</RelativeLayout>
