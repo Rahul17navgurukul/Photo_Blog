@@ -1,4 +1,4 @@
-package com.example.rk.photoblog;
+package com.navgurukul.rk.photoblog;
 
 
 import android.os.Bundle;
@@ -211,7 +211,9 @@ public class Home_Frament extends Fragment {
 
                 blogRecyclerAdapter.notifyDataSetChanged();
 
+
                 swipeContainer.setRefreshing(false);
+
 
 
             }

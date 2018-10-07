@@ -1,4 +1,4 @@
-package com.example.rk.photoblog;
+package com.navgurukul.rk.photoblog;
 
 import android.app.ProgressDialog;
 import android.content.Intent;

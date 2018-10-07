@@ -1,4 +1,4 @@
-package com.example.rk.photoblog;
+package com.navgurukul.rk.photoblog;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -17,6 +17,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.Date;
 import java.util.List;
@@ -69,21 +70,7 @@ public class CommentRecycleAdapter extends RecyclerView.Adapter<CommentRecycleAd
 
 
 
-//        firebaseFirestore.collection("Post/"+User_id+"/Comments").document(currentuserid)
-//                .addSnapshotListener(new EventListener<DocumentSnapshot>() {
-//                    @Override
-//                    public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
-//
-//                        if (documentSnapshot.exists()){
-//
-//                            String username = documentSnapshot.getString("User_id");
-//                            holder.UsserData(username);
-//
-//                        }
-//                    }
-//                });
-//
-//        firebaseFirestore.collection("Post").document(User_id).collection("Comments").document(User_id).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+//        firebaseFirestore.collection("User").document(User_id).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
 //            @Override
 //            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
 //
@@ -95,10 +82,7 @@ public class CommentRecycleAdapter extends RecyclerView.Adapter<CommentRecycleAd
 //
 //                        String userName = task.getResult().getString("Name");
 //
-//
 //                        holder.UsserData(userName);
-//
-//
 //
 //
 //                    } else {
@@ -106,12 +90,10 @@ public class CommentRecycleAdapter extends RecyclerView.Adapter<CommentRecycleAd
 //                    }
 //
 //
-//
 //                }
 //
 //            }
 //        });
-//
 
 
     }

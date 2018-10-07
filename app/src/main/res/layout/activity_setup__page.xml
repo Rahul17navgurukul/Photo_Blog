@@ -26,16 +26,13 @@
         android:layout_marginTop="100dp"
         />
 
-    <!--<de.hdodenhof.circleimageview.CircleImageView-->
-        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-        <!--android:id="@+id/setupimage"-->
-        <!--android:layout_marginTop="100dp"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_width="140dp"-->
-        <!--android:layout_height="140dp"-->
-        <!--android:src="@drawable/profile"-->
-        <!--app:civ_border_width="2dp"-->
-        <!--app:civ_border_color="#FFf"/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setupimage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="114dp"
+        android:src="@mipmap/cameraicon" />
 
     <EditText
         android:layout_width="match_parent"

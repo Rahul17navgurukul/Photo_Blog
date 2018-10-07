@@ -1,4 +1,4 @@
-package com.example.rk.photoblog;
+package com.navgurukul.rk.photoblog;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeContainer;
 
+    private EditText searchEt;
+
 
 
 
@@ -64,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
 
             add_post_btn = findViewById(R.id.add_post_btn);
             bottomNavigationView = findViewById(R.id.bottomNavigationView);
+//            searchEt = findViewById(R.id.searchEditText);
+
 
 
 //          Initialze Fragment here
@@ -189,6 +194,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.setting:
                 Intent setup_page = new Intent(MainActivity.this,Setup_Page.class);
                 startActivity(setup_page);
+//            case R.id.searchbtn:
+//                searchEt.setVisibility(View.VISIBLE);
 
 
             default:

@@ -1,4 +1,4 @@
-package com.example.rk.photoblog;
+package com.navgurukul.rk.photoblog;
 
 import android.app.Activity;
 import android.content.Context;
@@ -28,6 +28,7 @@ import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.squareup.picasso.Picasso;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -311,6 +312,7 @@ public class BlogRecyclerAdapter extends RecyclerView.Adapter<BlogRecyclerAdapte
             placeholder.placeholder(R.mipmap.add_btn);
 
             Glide.with(context).applyDefaultRequestOptions(placeholder).load(downlaodImage).into(blogmainImage);
+            Picasso.get().load(downlaodImage).placeholder(R.mipmap.add_btn).into(blogmainImage);
 
         }
 

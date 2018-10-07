@@ -101,6 +101,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="ffffff" />
+                                                <entry key="paddingPercent" value="20" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -111,7 +112,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/home/rk/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/navigation/ic_arrow_back_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/home/rk/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_camera_alt_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -121,16 +122,21 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="backgroundColor" value="2196f3" />
                                       <entry key="cropped" value="true" />
-                                      <entry key="iconShape" value="NONE" />
+                                      <entry key="iconShape" value="CIRCLE" />
                                       <entry key="imageAsset" value="$USER_HOME$/Desktop/icon.png" />
-                                      <entry key="outputName" value="icon" />
+                                      <entry key="outputName" value="cameraicon" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>

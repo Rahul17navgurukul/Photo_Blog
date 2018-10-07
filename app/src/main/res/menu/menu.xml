@@ -12,5 +12,6 @@
     <item
         android:icon="@mipmap/actioon_search"
         android:title="@android:string/search_go"
-        app:showAsAction="always" />
+        app:showAsAction="always"
+        android:id="@+id/searchbtn"/>
 </menu>
